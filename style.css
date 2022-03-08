@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    height: 100%;
+}
+
+.sidebar {
+    float: left;
+    width: 250px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #BA1F33;
+}
+
+.sidebar-wraper {
+    padding-bottom: 200px
+}
+
+.sidebar-logo img {
+    max-width: 250px;
+    width: 100%;
+}
+
+.sidebar-menu {
+    margin: 20px 0;
+    color: azure;
+}
+
+.sidebar-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar-menu a.sidebar-menu-selected {
+    color: white;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.sidebar-menu .fas {
+    margin: 0px 20px
+}
+
+.header {
+    padding: 10px;    
+    height:5%;
+    text-align: center;
+    background-color: #BA1F33;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
