@@ -159,7 +159,7 @@ html, body {
 .main {
     width: calc(100% - 250px);
     background-color: rgb(30,30,30);
-    height: 100%;
+    height: 80%;
     float: left;
     padding: 15px 50px;
     overflow-y: auto;
@@ -183,6 +183,7 @@ html, body {
 }
 
 .main-row-title {
+    margin: 10px 5px 0;
     width: 100%;
 }
 
@@ -200,4 +201,88 @@ html, body {
     border-radius: 12px;
     padding: 10px;
     text-align: center;
+}
+
+.main-col h3 {
+    color: white;
+    margin: 8px 0;
+}
+
+.main-col p {
+    color: rgb(100, 100, 100);
+    margin: 8px 0;
+    font-size: 13px;
+    text-align: left;
+}
+
+.player {
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(60, 60, 60);
+}
+
+.player-artist {
+    width: 20%;
+}
+
+.player-artist img {
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.player-artist h3 {
+    display: inline-block;
+    color: azure;
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.player-artist h3 > span {
+    color: rgb(200, 200, 200);
+    font-size: 13px;
+}
+
+.player-control {
+    width: 70%;
+    text-align: center;
+}
+.player-control-buttons a {
+    color: white;
+    margin: 8px 15px;
+    font-size: 18px;
+}
+
+.player-control-progress {
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    background: rgb(130, 130, 130);
+}
+
+.player-control-progress-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1700px) {
+    .main-col {
+        width: 225px;
+    }
 }
